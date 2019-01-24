@@ -4,6 +4,6 @@
 <br><br>
 
 <% Tweet.all.each do |tweet| %>
-  <h4><%= tweet.user %></h4>
+  <h4><%= tweet.user.username %></h4>
   <p><%= tweet.content %></p>
 <% end %>
